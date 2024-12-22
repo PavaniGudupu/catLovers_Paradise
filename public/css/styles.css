@@ -1,0 +1,255 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 400px; /* Increase size for better visibility */
+    height: 400px; /* Ensure a square aspect ratio */
+    border-radius: 50%; /* Keep circular shape */
+    object-fit: cover; /* Ensure the image fills the circle without distortion */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    border: 3px solid #ffcc00; /* Add a border with a pleasing color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover animation */
+}
+
+img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f3ffdf;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #308d02;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar .links a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Section */
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+}
+
+.logo-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Main Container Styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.paragraph, .contact-info {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-details li {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #308d01;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: rgb(34, 31, 199);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* General Form Styling */
+.card {
+    padding: 10px; /* Increased padding for a more spacious feel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better contrast */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Added margin between card elements */
+}
+
+.card-body {
+    padding: 10px;
+}
+
+/* Centering the form */
+.container {
+    max-width: 500px; /* Set a max width for better control */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+h1 {
+    text-align: center; /* Center the header */
+    margin-bottom: 20px;
+}
+
+/* Form Field Styling */
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+.form-group label {
+    font-weight: bold; /* Make labels bold for readability */
+    margin-bottom: 5px; /* Add space below the label */
+    display: block; /* Ensure label is block level */
+}
+
+.form-control {
+    width: 100%; /* Full-width input */
+    padding: 12px; /* Padding inside the input fields */
+    border: 1px solid #b86969; /* Light border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Readable font size */
+    margin-bottom: 10px; /* Space below the input fields */
+}
+
+/* Button Styling */
+.btn {
+    width: 100%; /* Make button take full width */
+    padding: 14px; /* Add padding to button for better click area */
+    font-size: 16px; /* Ensure button text is readable */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.btn-dark {
+    background-color: #333; /* Dark background for the button */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+}
+
+.btn-dark:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+.btn-danger {
+    background-color: #db4437; /* Google red color */
+    color: white; /* White text */
+    border: none; /* Remove border */
+}
+
+.btn-danger:hover {
+    background-color: #c1351d; /* Darker shade on hover */
+}
+
+/* Google Sign-In Button */
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Add padding on smaller screens */
+    }
+    
+    .col-sm-6 {
+        width: 100%; /* Stack the columns on smaller screens */
+        margin-bottom: 20px; /* Space out the columns */
+    }
+}

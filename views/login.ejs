@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CatLovers Paradise</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">CatLovers Paradise</div>
+    <div class="links">
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>            
+    </div>
+</div>
+<br>
+
+    <div class="container mt-5">
+        <h1>Login</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- POST request to /login route -->
+                        <form action="/login" method="POST">
+                            <div class="form-group">
+                                <label for="username">Email</label>
+                                <input type="email" class="form-control" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-block">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Sign-In Button -->
+            <div class="col-sm-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <a class="btn btn-danger btn-block" href="/auth/google" role="button">
+                            <i class="fab fa-google"></i> Sign In with Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 CatLovers Paradise. All rights reserved. <br><a href="#privacy">Privacy Policy</a> 
+        <a href="mailto:pavani9419@gmail.com">pavani9419@gmail.com</a></p>
+    </footer>
+</body>
+</html>
